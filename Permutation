@@ -1,0 +1,20 @@
+class Solution{
+public:
+    long long nPr(int n, int r){
+        // code here
+        long long t1=1,t2=1;
+        int i=1;
+        while(i<=n)
+        {
+            t1=t1*i;
+            i++;
+        }
+        i=1;
+        while(i<=n-r)
+        {
+            t2=t2*i;
+            i++;
+        }
+        return t1/t2;
+    }
+};
