@@ -1,0 +1,14 @@
+class Solution
+{
+	public:
+		long long int sum_of_square_evenNumbers(long long int n)
+		{
+		    // Code here
+		     long sum=0, count=2;
+        for (int i=0;i<n;i++){
+            sum=sum+count*count;
+            count+=2;
+        }
+        return sum;
+		}
+};
